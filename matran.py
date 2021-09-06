@@ -1,19 +1,19 @@
 import numpy as np
-def ucln(a,b):
-    if a==0: 
+def ucln(aa,b):
+    if aa==0: 
         return b
     if b==0:
-        return a
-    if a<0:
-        a=-a
+        return aa
+    if aa<0:
+        aa=-aa
     if b<0:
         b=-b
-    if b>a:
-        c=a
-        a=b
+    if b>aa:
+        c=aa
+        aa=b
         b=c
     for i in range(b,0,-1):
-        if a%i==0:
+        if aa%i==0:
             if b%i==0:
                 return i
 def toigian(lst):
@@ -33,7 +33,9 @@ def phuDaiSo(matrix,x,y):
                 if j!=y:
                     lst.append(matrix[i][j])
             phudaiso.append(lst)
+
     return phudaiso
+
 def dinhThuc(matrix):
     if len(matrix)==1: 
         return matrix[0][0]
